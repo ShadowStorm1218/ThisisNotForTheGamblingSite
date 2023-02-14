@@ -11,7 +11,7 @@ let page: Page;
 
 (async (): Promise<void> => {
     Logger.log("STARTUP", "Starting bloxflip-autocrash");
-    Logger.log("All Credits go to FruityCombo#8866");
+    Logger.log("CREDITS","Made By FruityCombo#8866");
     
     await fetchCfg();
     await updater();

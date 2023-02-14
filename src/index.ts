@@ -11,7 +11,7 @@ let page: Page;
 
 (async (): Promise<void> => {
     Logger.log("STARTUP", "Starting bloxflip-autocrash");
-    Logger.log("SUPPORT", "Support the developers by giving the repo a star! https://github.com/Norikiru/bloxflip-autocrash");
+    Logger.log("All Credits go to FruityCombo#8866");
     
     await fetchCfg();
     await updater();

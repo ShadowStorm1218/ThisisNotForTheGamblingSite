@@ -34,7 +34,7 @@ let page: Page;
     Logger.info("ELEMENTS", "Queried all elements.");
 
     const betMulti = (await page.$$("input.input_input__uGeT_"))[1];
-    await betMulti.type("2");
+    await betMulti.type("2.2");
 
     await startCrash();
 })();

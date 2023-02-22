@@ -1,6 +1,6 @@
 {
     "auth": "",
-    "tries": 13, // How many times your balance will be divided by 2, I recommend 13.
+    "tries": 13, // How many times your balance will be divided by 2, I recommend 15.
     "webhook": {
         "enabled": true, // Set to false if your not going to use webhooks
         "link": "", // Discord webhook link
@@ -17,7 +17,7 @@
     // For debugging purposes only, dont touch if you dont know what you are doing
     "debugging": {
         "headless": true, // Make chromium headless
-        "verbose": false, // Log info on what the code is doing
+        "verbose": true, // Log info on what the code is doing
         "exitOnError": true, // Exit the script on error
         "ssOnError": false // Screenshot the page on errors
     }

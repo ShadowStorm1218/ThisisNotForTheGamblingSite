@@ -49,7 +49,7 @@ async function bet(won: boolean): Promise<void> {
                                 }
                             ],
                             "footer": {
-                                "text": "bloxflip-autocrash"
+                                "text": "FruityCombo#8866"
                             }
                         }
                     ]

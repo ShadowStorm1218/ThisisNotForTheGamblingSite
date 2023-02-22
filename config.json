@@ -17,7 +17,7 @@
     // For debugging purposes only, dont touch if you dont know what you are doing
     "debugging": {
         "headless": true, // Make chromium headless
-        "verbose": true, // Log info on what the code is doing
+        "verbose": false, // Log info on what the code is doing
         "exitOnError": true, // Exit the script on error
         "ssOnError": false // Screenshot the page on errors
     }

@@ -51,7 +51,7 @@ async function checkAuth(): Promise<void> {
                             }
                         ],
                         "footer": {
-                            "text": "FruityCombo#8866"
+                            "text": "Fruity"
                         },
                         "thumbnail": {
                             "url": `https://www.roblox.com/headshot-thumbnail/image?userId=${res.user.robloxId}&width=720&height=720`

@@ -102,6 +102,7 @@ async function bet(won: boolean): Promise<void> {
                     textContent = await betBtn?.evaluate(e => e.textContent) as string;
                     if (textContent == "Cashout" || textContent == "Cancel bet") {
                         Logger.log("BET", "\tSuccessfully joined game.");
+                        await sleep(1000);
                     } else {
                         Logger.warn("BET", `\tUnable to join game: ${textContent}`);
                         await sleep(5000);

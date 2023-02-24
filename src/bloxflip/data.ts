@@ -56,7 +56,7 @@ async function getInfo(): Promise<void> {
                                 }
                             ],
                             "footer": {
-                                "text": "bloxflip-autocrash"
+                                "text": "ima kms this shit was so hard"
                             },
                             "thumbnail": {
                                 "url": "https://bloxflip.com/favicon.ico"

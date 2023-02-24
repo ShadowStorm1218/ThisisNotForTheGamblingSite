@@ -25,7 +25,7 @@ async function startCrash(): Promise<void> {
                         Logger.log("CRASH", "Status: Lost \n ");
                         Logger.log("GAME", `\tGame #${gameLoss+gameWon}`);
                         Logger.log("GAME", `\tLoss Streak: ${lossStreak}`);
-                        await sleep(1500);
+                        await sleep(3000);
                         await bet(false);
                     }
 
@@ -36,7 +36,7 @@ async function startCrash(): Promise<void> {
                             lossStreak = 0;
                             Logger.log("CRASH", "Status: Won \n ");
                             Logger.log("GAME", `\tGame #${gameLoss+gameWon}`);
-                            await sleep(1500);
+                            await sleep(3000);
                             await bet(true);
                         }
                     } else {
@@ -48,11 +48,11 @@ async function startCrash(): Promise<void> {
                         if (lossStreak) {
                             Logger.warn("CRASH", "Continuing loss streak, getting wiped is possible.");
                             console.log("\n");
-                            await sleep(1500);
+                            await sleep(3000);
                             await bet(false);
                         } else {
                             console.log("\n");
-                            await sleep(1500);
+                            await sleep(3000);
                             await bet(true);
                         }
                     }

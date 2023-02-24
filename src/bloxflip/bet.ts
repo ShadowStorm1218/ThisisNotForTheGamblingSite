@@ -97,14 +97,14 @@ async function bet(won: boolean): Promise<void> {
 
                 if (textContent?.includes("Join")) {
                     await betBtn?.type("\n");
-                    await sleep(1000);
+                    await sleep(4000);
 
                     textContent = await betBtn?.evaluate(e => e.textContent) as string;
                     if (textContent == "Cashout" || textContent == "Cancel bet") {
                         Logger.log("BET", "\tSuccessfully joined game.");
                     } else {
                         Logger.warn("BET", `\tUnable to join game: ${textContent}`);
-                        await sleep(1000);
+                        await sleep(4000);
                     }
                 } else {
                     if (textContent == "Cashout" || textContent == "Cancel bet") {
@@ -112,7 +112,7 @@ async function bet(won: boolean): Promise<void> {
                     } else {
                         Logger.warn("BET", `\tBet button does not include 'Join': ${textContent}, trying again...`);
                         tries++;
-                        await sleep(1000);
+                        await sleep(4000);
                         await click();
                     }
                 }

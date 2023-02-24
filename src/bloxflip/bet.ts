@@ -79,7 +79,7 @@ async function bet(won: boolean): Promise<void> {
         const currentValue: string = await inputBox?.evaluate(e => e.getAttribute("value")) as string;
         if (currentValue !== calcBet.toString()) {
             Logger.warn("BET", `\ttypeBet: Expected ${calcBet}, got ${currentValue} \nClearing the input box and trying again.`);
-            await sleep(500);
+            await sleep(1500);
             await clear();
             await typeBet();
         }
@@ -97,14 +97,14 @@ async function bet(won: boolean): Promise<void> {
 
                 if (textContent?.includes("Join")) {
                     await betBtn?.type("\n");
-                    await sleep(4000);
+                    await sleep(5000);
 
                     textContent = await betBtn?.evaluate(e => e.textContent) as string;
                     if (textContent == "Cashout" || textContent == "Cancel bet") {
                         Logger.log("BET", "\tSuccessfully joined game.");
                     } else {
                         Logger.warn("BET", `\tUnable to join game: ${textContent}`);
-                        await sleep(4000);
+                        await sleep(5000);
                     }
                 } else {
                     if (textContent == "Cashout" || textContent == "Cancel bet") {
@@ -112,7 +112,7 @@ async function bet(won: boolean): Promise<void> {
                     } else {
                         Logger.warn("BET", `\tBet button does not include 'Join': ${textContent}, trying again...`);
                         tries++;
-                        await sleep(4000);
+                        await sleep(5000);
                         await click();
                     }
                 }
